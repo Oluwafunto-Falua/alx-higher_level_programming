@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-lwc_letters = range(97, 123)
-for lwc_letter in lwc_letters:
-   if chr(lwc_letter) == 'q' or chr(lwc_letter) == 'e':continue
-    print("{}".format(chr(lwc_letter)), end="")
+for a in range(ord('a'), ord('z') + 1):
+    if chr(a) != 'e' and chr(a) != 'q':
+        print("{:c}".format(a), end='')
